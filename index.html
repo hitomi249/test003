@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="application/javascript">
+      const draw = () => {
+        let canvas = document.getElementById("cvs");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect(10, 10, 50, 50);
+      };
+    </script>
   </head>
-  <body>
+  <body onload="draw()">
     <canvas id="cvs" width="300" height="200"> </canvas>
   </body>
 </html>
